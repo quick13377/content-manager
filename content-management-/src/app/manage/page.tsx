@@ -311,7 +311,12 @@ export default function ContentManagement() {
         return (
           <div className="flex items-center h-full">
             <Globe className="w-8 h-8 mr-2" />
-            <a href={item.content} target="_blank" rel="noopener noreferrer" className="text-sm truncate text-blue-500 hover:underline">
+            <a 
+              href={typeof item.content === 'string' ? item.content : '#'} // Ensure content is a string
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-sm truncate text-blue-500 hover:underline"
+            >
               {item.content}
             </a>
           </div>
