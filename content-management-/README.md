@@ -2,6 +2,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+'npm install next' cmd in folder "content-mangement-"
+
 First, run the development server:
 
 ```bash
