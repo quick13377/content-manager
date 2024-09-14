@@ -1,38 +1,106 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Content Management System
 
-## Getting Started
+A modern, responsive content management system built with Next.js, React, and Tailwind CSS.
 
-'npm install next' cmd in folder "content-mangement-"
+## Features
 
-First, run the development server:
+- Dynamic content creation and management
+- Drag-and-drop interface for content organization
+- Real-time preview of content changes
+- Responsive design for desktop and mobile devices
+- User authentication and role-based access control
+- SEO-friendly content structure
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Tech Stack
+
+- [Next.js](https://nextjs.org/) - React framework for production
+- [React](https://reactjs.org/) - JavaScript library for building user interfaces
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [TypeScript](https://www.typescriptlang.org/) - Typed superset of JavaScript
+- [Radix UI](https://www.radix-ui.com/) - Unstyled, accessible UI components
+- [Framer Motion](https://www.framer.com/motion/) - Animation library for React
+- [React Beautiful DnD](https://github.com/atlassian/react-beautiful-dnd) - Drag and drop for lists with React
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (version 14 or later)
+- npm (usually comes with Node.js)
+
+## Installation
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/your-username/content-management-system.git
+   ```
+
+2. Navigate to the project directory:
+   ```
+   cd content-management-system
+   ```
+
+3. Install dependencies:
+   ```
+   npm install
+   ```
+
+## Usage
+
+1. To run the development server:
+   ```
+   npm run dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+
+2. To build the application for production:
+   ```
+   npm run build
+   ```
+
+3. To start the production server:
+   ```
+   npm start
+   ```
+
+## Project Structure
+
+```
+content-management-system/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── styles/
+│   └── utils/
+├── public/
+├── .gitignore
+├── next.config.js
+├── package.json
+├── README.md
+└── tsconfig.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Contributing
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## Learn More
+## License
 
-To learn more about Next.js, take a look at the following resources:
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Acknowledgments
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- [Next.js Documentation](https://nextjs.org/docs)
+- [React Documentation](https://reactjs.org/docs/getting-started.html)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 
-## Deploy on Vercel
+## Contact
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Your Name - [@your_twitter](https://twitter.com/your_twitter) - email@example.com
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Project Link: [https://github.com/your-username/content-management-system](https://github.com/your-username/content-management-system)
