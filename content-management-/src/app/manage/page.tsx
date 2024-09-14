@@ -29,7 +29,7 @@ interface ContentItem {
   id: string
   title: string
   type: 'image' | 'webpage' | 'text' | 'video'
-  content: string
+  content: string | File 
   startDateTime: string // ISO 8601 format
   endDateTime: string // ISO 8601 format
   tags: string[]
