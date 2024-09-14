@@ -23,13 +23,13 @@ import { Progress } from "@/components/ui/progress"
 import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from "@/components/ui/alert-dialog"
 import { useEffect } from 'react'; // Ensure useEffect is imported
 import { useRouter } from 'next/navigation'; // Ensure useRouter is imported
-
+ 
 // Define the structure of a content item
 interface ContentItem {
   id: string
   title: string
   type: 'image' | 'webpage' | 'text' | 'video'
-  content: string | File 
+  content: string | File // Allow content to be either a string or a File
   startDateTime: string // ISO 8601 format
   endDateTime: string // ISO 8601 format
   tags: string[]
@@ -206,7 +206,9 @@ export default function ContentManagement() {
       content: contentToSave,
       startDateTime: newItem.startDateTime || new Date().toISOString(),
       endDateTime: newItem.endDateTime || new Date().toISOString(),
-      tags: newItem.tags || []
+      tags: newItem.tags || [],
+      title: newItem.title || '', // Ensure title is always a string
+      type: newItem.type || 'text', // Provide a default type if necessary
     };
 
     // Update existing item if editingId is set
