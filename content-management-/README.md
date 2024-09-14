@@ -31,7 +31,7 @@ Before you begin, ensure you have the following installed:
 
 1. Clone the repository:
    ```
-   git clone [https://github.com/quickk1337/content-manager.git](https://github.com/quick13377/content-manager.git)
+   git clone https://github.com/quickk1337/content-manager.git
    ```
 
 2. Navigate to the project directory:
