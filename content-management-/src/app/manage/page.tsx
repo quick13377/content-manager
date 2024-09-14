@@ -317,7 +317,7 @@ export default function ContentManagement() {
               rel="noopener noreferrer" 
               className="text-sm truncate text-blue-500 hover:underline"
             >
-              {item.content}
+              {typeof item.content === 'string' ? item.content : 'Invalid URL'} // Ensure content is a string
             </a>
           </div>
         )
