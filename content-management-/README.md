@@ -8,7 +8,7 @@ A modern, responsive content management system built with Next.js, React, and Ta
 - Drag-and-drop interface for content organization
 - Real-time preview of content changes
 - Responsive design for desktop and mobile devices
-- User authentication and role-based access control
+- User authentication and role-based access control (user: thomas , pass: thomas)
 - SEO-friendly content structure
 
 ## Tech Stack
