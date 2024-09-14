@@ -301,7 +301,7 @@ export default function ContentManagement() {
         return (
           <div className="relative w-full h-full">
             <img
-              src={item.content}
+              src={typeof item.content === 'string' ? item.content : URL.createObjectURL(item.content)} // Ensure content is a string
               alt={item.title}
               className="rounded object-cover w-full h-full"
             />
@@ -363,7 +363,7 @@ export default function ContentManagement() {
             {item.type === 'image' ? (
               <div className="relative w-full h-40">
                 <img
-                  src={item.content}
+                  src={typeof item.content === 'string' ? item.content : URL.createObjectURL(item.content)} // Ensure content is a string
                   alt={item.title}
                   className="rounded object-cover w-full h-full"
                 />
